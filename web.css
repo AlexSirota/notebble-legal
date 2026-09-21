@@ -1,6 +1,10 @@
 /* Screen styles for the Notebble legal documents.
    Loaded after style.css, which is print-oriented, and adapts the same markup
-   for reading in a browser. */
+   for reading in a browser.
+
+   The colors mirror how the documents look inside the app: the white page of
+   the PDF on the app's warm grey background. Light in every theme, because the
+   PDF is always white paper — so there is deliberately no dark-mode variant. */
 
 html {
   -webkit-text-size-adjust: 100%;
@@ -9,11 +13,24 @@ html {
 body {
   font-size: 17px;
   line-height: 1.6;
+  background: #E8E4DF; /* AppColors.background */
+  color: #2D2D2D;
+  margin: 0;
+  padding: 24px 16px 48px;
+}
+
+/* The document itself, as the white page the app shows. */
+.sheet {
   max-width: 720px;
   margin: 0 auto;
-  padding: 32px 20px 64px;
   background: #FFFFFF;
-  color: #2D2D2D;
+  border-radius: 12px;
+  padding: 40px 36px 48px;
+}
+
+@media (max-width: 600px) {
+  body { padding: 12px 10px 32px; }
+  .sheet { padding: 28px 22px 36px; border-radius: 10px; }
 }
 
 h1 { font-size: 30px; line-height: 1.2; margin-bottom: 6px; }
@@ -46,11 +63,3 @@ a { color: #1B6B5A; }
   text-decoration: none;
 }
 .backlink:hover { text-decoration: underline; }
-
-@media (prefers-color-scheme: dark) {
-  body { background: #17150F; color: #E8E4DA; }
-  .meta, .footer { color: #A09A8C; }
-  .box { background: #211E17; border-color: #3A3529; }
-  .footer { border-top-color: #3A3529; }
-  a { color: #6FD3B4; }
-}
