@@ -244,6 +244,45 @@
 
 </main>
 
+<script>
+  // Scroll-spy for the FAQ section nav: highlight the last section whose top
+  // has passed the viewport's activation line (a bit below the header).
+  (function () {
+    const links = Array.from(document.querySelectorAll('.faq__section-nav a[href^="#"]'));
+    if (!links.length) return;
+    const pairs = links
+      .map(link => ({ link, el: document.getElementById(link.getAttribute('href').slice(1)) }))
+      .filter(p => p.el);
+    if (!pairs.length) return;
+    const update = () => {
+      const line = Math.max(120, window.innerHeight * 0.35);
+      let current = pairs[0];
+      for (const p of pairs) {
+        if (p.el.getBoundingClientRect().top - line <= 0) current = p;
+      }
+      // If the last section is fully visible (or the page is scrolled to the
+      // bottom and can't scroll further), lock the last link as current — this
+      // handles short bottom sections whose top never reaches the activation line.
+      const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      const last = pairs[pairs.length - 1];
+      if (atBottom || last.el.getBoundingClientRect().top < window.innerHeight * 0.75) {
+        current = last;
+      }
+      links.forEach(l => l.removeAttribute('aria-current'));
+      current.link.setAttribute('aria-current', 'true');
+    };
+    let queued = false;
+    const schedule = () => {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(() => { queued = false; update(); });
+    };
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    update();
+  })();
+</script>
+
 <footer class="site-footer">
   <span class="site-footer__brand">
     <img src="assets/notebble-icon.png" alt="" width="24" height="24">
