@@ -1,7 +1,17 @@
 /* Notebble Support page styles.
    Mobile-first; desktop layout kicks in at >= 900px.
-   No third-party requests: uses the system font stack. Drop woff2 files into
-   assets/ and add an @font-face block if you later want Plus Jakarta Sans. */
+   Self-hosted Plus Jakarta Sans (variable, Latin subset) — one file covers
+   weights 400–800, no third-party requests. */
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('assets/fonts/plus-jakarta-sans-latin-variable.woff2') format('woff2-variations'),
+       url('assets/fonts/plus-jakarta-sans-latin-variable.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 :root {
   --bg: #E8E4DF;
@@ -46,7 +56,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 15px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -318,6 +328,11 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
   gap: 14px;
 }
+.popular__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 .topic {
   background: var(--surface);
   border-radius: 20px;
@@ -526,6 +541,11 @@ img { max-width: 100%; display: block; }
 
 .legal {
   padding: 0 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.legal__grid {
   display: flex;
   flex-direction: column;
   gap: 12px;
