@@ -1,56 +1,260 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Notebble — Legal</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="web.css">
-<style>
-  .docs { list-style: none; padding: 0; margin: 28px 0 0; }
-  .docs li { margin: 0 0 12px; }
-  .docs a {
-    display: block;
-    padding: 16px 18px;
-    border: 1px solid #D6D1C6;
-    border-radius: 10px;
-    text-decoration: none;
-    color: inherit;
-  }
-  .docs a:hover { background: #F4F1EC; }
-  .docs .name { font-weight: 700; font-size: 17px; }
-  .docs .desc { color: #7D7D7D; font-size: 15px; margin-top: 3px; }
-</style>
+<meta name="color-scheme" content="light">
+<title>Notebble Support</title>
+<meta name="description" content="Get help with Notebble — contact support, manage or cancel your subscription, restore purchases and request refunds.">
+
+<!-- Support email is used 4 times below. Change it in one place: -->
+<!-- SUPPORT_EMAIL: support@notebble.app -->
+
+<link rel="icon" type="image/png" href="assets/notebble-icon.png">
+<link rel="apple-touch-icon" href="assets/notebble-icon.png">
+
+<meta property="og:title" content="Notebble Support">
+<meta property="og:description" content="Get help with Notebble — contact support, manage or cancel your subscription, restore purchases and request refunds.">
+<meta property="og:image" content="assets/notebble-icon.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" href="support.css">
 </head>
 <body>
 
-<div class="sheet">
+<a class="skip-link" href="#main">Skip to content</a>
 
-<h1>Notebble</h1>
-<div class="meta">Legal documents</div>
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Notebble home">
+    <img src="assets/notebble-icon.png" alt="Notebble app icon" width="40" height="40">
+    <span>Notebble</span>
+  </a>
+  <nav class="site-nav" aria-label="Site">
+    <a href="./" aria-current="page">Support</a>
+    <a href="privacy_policy.html">Privacy Policy</a>
+    <a href="terms_of_use.html">Terms of Use</a>
+  </nav>
+  <a class="contact-pill" href="mailto:support@notebble.app?subject=Notebble%20support">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>
+    Contact
+  </a>
+</header>
 
-<p>Notebble is an offline notes and reminders app for iOS and Android. These are the documents that govern its use.</p>
+<main id="main">
 
-<ul class="docs">
-  <li>
-    <a href="privacy_policy.html">
-      <span class="name">Privacy Policy</span>
-      <span class="desc">How the app handles your data.</span>
+<section id="top" class="hero">
+  <div class="hero__text">
+    <img class="hero-icon" src="assets/notebble-icon.png" alt="Notebble app icon" width="88" height="88">
+    <h1>How can we help?</h1>
+    <p class="lede">Notebble is a minimal notes and reminders app for iPhone. It works fully offline — no account, no tracking, no ads. Everything you write stays on your device.</p>
+    <ul class="trust-points">
+      <li><span class="dot" aria-hidden="true"></span>No account needed</li>
+      <li><span class="dot" aria-hidden="true"></span>Works offline</li>
+      <li><span class="dot" aria-hidden="true"></span>No data collected</li>
+    </ul>
+  </div>
+
+  <div class="card contact-card">
+    <div class="contact-card__header">
+      <span class="contact-card__icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2A2A2A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>
+      </span>
+      <span class="eyebrow">Contact us</span>
+    </div>
+    <h2>Email support</h2>
+    <p>Questions, bugs or billing trouble — send us a message and we'll get back to you.</p>
+    <a class="email-link" href="mailto:support@notebble.app?subject=Notebble%20support">support@notebble.app</a>
+    <a class="btn btn--primary btn--full" href="mailto:support@notebble.app?subject=Notebble%20support">
+      Send an email
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
-  </li>
-  <li>
-    <a href="terms_of_use.html">
-      <span class="name">Terms of Use</span>
-      <span class="desc">The rules for using the app.</span>
+    <p class="note"><strong>Helps us answer faster:</strong> your iPhone model, iOS version, and what you were doing when the problem happened.</p>
+  </div>
+</section>
+
+<section class="popular" aria-labelledby="popular-label">
+  <h2 id="popular-label" class="section-label">Popular topics</h2>
+  <div class="popular__grid">
+    <a class="topic" href="#cancel">
+      <span class="topic__icon topic__icon--green" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1B5E4B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg>
+      </span>
+      <span class="topic__body">
+        <span class="topic__title">Cancel a subscription</span>
+        <span class="topic__desc">Stop Pro from renewing in your iPhone settings.</span>
+      </span>
+      <svg class="topic__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5F5B55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
     </a>
-  </li>
-</ul>
+    <a class="topic" href="#restore">
+      <span class="topic__icon topic__icon--blue" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D4ED8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+      </span>
+      <span class="topic__body">
+        <span class="topic__title">Restore purchases</span>
+        <span class="topic__desc">Get Pro back on a new or reset iPhone.</span>
+      </span>
+      <svg class="topic__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5F5B55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+    <a class="topic" href="#refund">
+      <span class="topic__icon topic__icon--amber" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg>
+      </span>
+      <span class="topic__body">
+        <span class="topic__title">Request a refund</span>
+        <span class="topic__desc">Refunds are handled by Apple — here's how.</span>
+      </span>
+      <svg class="topic__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5F5B55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
 
-<div class="footer">
-These documents are also bundled inside the app and can be opened offline from Settings.
-</div>
+<section class="faq" aria-labelledby="faq-title">
+  <div class="faq__intro">
+    <h2 id="faq-title">Frequently asked questions</h2>
+    <p class="faq__intro-copy">Quick answers to the things people ask most.</p>
+    <nav class="faq__section-nav" aria-label="FAQ sections">
+      <a href="#billing" aria-current="true">Subscription &amp; billing</a>
+      <a href="#using">Using Notebble</a>
+      <a href="#legal">Legal</a>
+    </nav>
+  </div>
 
-</div>
+  <div class="faq__cards">
+    <h3 id="billing">Subscription &amp; billing</h3>
+
+    <article class="qa" id="cancel">
+      <h4>How do I cancel my subscription?</h4>
+      <p>Subscriptions are managed by Apple, so you cancel from your iPhone's settings. Deleting the app does not cancel your subscription.</p>
+      <ol class="steps" role="list">
+        <li class="step"><span class="step__num" aria-hidden="true">1</span><span>Open the <strong>Settings</strong> app on your iPhone.</span></li>
+        <li class="step"><span class="step__num" aria-hidden="true">2</span><span>Tap <strong>your name</strong> at the top, then <strong>Subscriptions</strong>.</span></li>
+        <li class="step"><span class="step__num" aria-hidden="true">3</span><span>Choose <strong>Notebble</strong> and tap <strong>Cancel Subscription</strong>.</span></li>
+      </ol>
+      <div class="breadcrumb" aria-label="Path in the iOS Settings app">
+        <span class="chip">Settings</span><span class="sep" aria-hidden="true">›</span>
+        <span class="chip">Your name</span><span class="sep" aria-hidden="true">›</span>
+        <span class="chip">Subscriptions</span><span class="sep" aria-hidden="true">›</span>
+        <span class="chip">Notebble</span>
+      </div>
+      <p class="note note--yellow">Cancel at least 24 hours before your renewal date to avoid the next charge. You keep Pro until the end of the period you've already paid for. You can also get there from the app: <strong>Settings → Manage subscriptions → Manage subscription</strong>.</p>
+    </article>
+
+    <article class="qa" id="restore">
+      <h4>How do I restore my purchases?</h4>
+      <p>Reinstalled Notebble or moved to a new iPhone? Your Pro subscription is tied to your Apple ID, so you can restore it in a few taps.</p>
+      <ol class="steps" role="list">
+        <li class="step"><span class="step__num" aria-hidden="true">1</span><span>Make sure you're signed in with the <strong>same Apple ID</strong> you subscribed with.</span></li>
+        <li class="step"><span class="step__num" aria-hidden="true">2</span><span>Open Notebble and tap the <strong>gear icon</strong> in the top-right corner.</span></li>
+        <li class="step"><span class="step__num" aria-hidden="true">3</span><span>Tap <strong>Manage subscriptions</strong>, then <strong>Restore</strong> at the top of the screen.</span></li>
+      </ol>
+      <p class="note">Restoring brings back your <strong>Pro access</strong>, not your notes. Notes and reminders are stored only on the iPhone where you created them.</p>
+    </article>
+
+    <article class="qa" id="refund">
+      <h4>How do I request a refund?</h4>
+      <p>All payments are processed by Apple, so refunds are requested from Apple directly — we aren't able to issue them ourselves.</p>
+      <ol class="steps" role="list">
+        <li class="step"><span class="step__num" aria-hidden="true">1</span><span>Go to <a href="https://reportaproblem.apple.com" rel="noopener"><strong>reportaproblem.apple.com</strong></a> and sign in with your Apple ID.</span></li>
+        <li class="step"><span class="step__num" aria-hidden="true">2</span><span>Tap <strong>I'd like to</strong> and choose <strong>Request a refund</strong>.</span></li>
+        <li class="step"><span class="step__num" aria-hidden="true">3</span><span>Pick a reason, select your <strong>Notebble</strong> purchase and submit.</span></li>
+      </ol>
+      <a class="btn btn--outline" href="https://reportaproblem.apple.com" rel="noopener">
+        Open reportaproblem.apple.com
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+    </article>
+
+    <article class="qa" id="pro">
+      <h4>What's included in Pro?</h4>
+      <p>Pro removes every limit of the free plan. It's a monthly, auto-renewing subscription — the current price is shown in the app before you buy.</p>
+      <table class="pro-table">
+        <thead>
+          <tr><th scope="col">Feature</th><th scope="col">Free</th><th scope="col" class="pro">Pro</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Notes</th><td class="free">3</td><td class="pro">Unlimited</td></tr>
+          <tr><th scope="row">Reminders</th><td class="free">4</td><td class="pro">Unlimited</td></tr>
+          <tr><th scope="row">Freeform page length</th><td class="free">250 characters</td><td class="pro">Unlimited</td></tr>
+          <tr><th scope="row">Note description length</th><td class="free">120 characters</td><td class="pro">Unlimited</td></tr>
+          <tr><th scope="row">Reminder description length</th><td class="free">80 characters</td><td class="pro">Unlimited</td></tr>
+          <tr><th scope="row">Edits per note or reminder</th><td class="free">3</td><td class="pro">Unlimited</td></tr>
+        </tbody>
+      </table>
+      <p class="pro-footnote">If you cancel, nothing is deleted — you keep everything you've written and simply can't go past the free limits again.</p>
+    </article>
+
+    <h3 id="using">Using Notebble</h3>
+
+    <article class="qa">
+      <h4>My reminders aren't showing up</h4>
+      <p>Check that notifications are allowed in <strong>Settings → Notifications → Notebble</strong>. Then open Notebble and pull down on the Reminders list — this re-registers every reminder with iOS.</p>
+    </article>
+
+    <article class="qa">
+      <h4>Where are my notes stored? Can I sync them?</h4>
+      <p>Everything is stored only on your iPhone. There's no account and no cloud sync, so we can't see or recover your notes. Deleting the app also deletes its notes and reminders.</p>
+    </article>
+
+    <article class="qa">
+      <h4>Can I switch between freeform and structured notes?</h4>
+      <p>Yes — go to <strong>Settings → Note-taking style</strong>. Switching doesn't delete anything: each style keeps its own content and it's there when you switch back.</p>
+    </article>
+  </div>
+</section>
+
+<section class="stillneed-wrap">
+  <div class="stillneed">
+    <div class="stillneed__text">
+      <h2>Still need help?</h2>
+      <p>Write to <a class="mail" href="mailto:support@notebble.app?subject=Notebble%20support">support@notebble.app</a> and tell us what's going on.</p>
+    </div>
+    <a class="btn btn--primary" href="mailto:support@notebble.app?subject=Notebble%20support">
+      Email support
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<section class="legal" id="legal" aria-labelledby="legal-label">
+  <h2 id="legal-label" class="section-label">Legal</h2>
+  <div class="legal__grid">
+    <a class="legal-card" href="privacy_policy.html">
+      <span class="legal-card__icon legal-card__icon--green" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1B5E4B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+      </span>
+      <span class="legal-card__body">
+        <span class="legal-card__title">Privacy Policy</span>
+        <span class="legal-card__desc">How we handle your data.</span>
+      </span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5F5B55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+    <a class="legal-card" href="terms_of_use.html">
+      <span class="legal-card__icon legal-card__icon--amber" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 13h6M10 17h4"/></svg>
+      </span>
+      <span class="legal-card__body">
+        <span class="legal-card__title">Terms of Use (EULA)</span>
+        <span class="legal-card__desc">The rules for using the app.</span>
+      </span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5F5B55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <span class="site-footer__brand">
+    <img src="assets/notebble-icon.png" alt="" width="24" height="24">
+    <span>© 2026 Notebble. All rights reserved.</span>
+  </span>
+  <span class="site-footer__links">
+    <a href="./">Support</a>
+    <a href="privacy_policy.html">Privacy</a>
+    <a href="terms_of_use.html">Terms</a>
+  </span>
+</footer>
 
 </body>
 </html>
