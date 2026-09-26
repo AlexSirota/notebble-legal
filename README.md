@@ -10,8 +10,8 @@ The Privacy Policy and Terms of Use are also bundled inside the app and can be
 opened offline from Settings.
 
 The support email address is hard-coded in `index.html` in four places (three
-`mailto:` links and the visible address). Search for `support@notebble.app` to
-change it.
+`mailto:` links and the visible address). Search for
+`notebble-support@codeandsprites.online` to change it.
 
 Notebble is an offline notes and reminders app for iOS and Android. It has no
 account, no backend, and no analytics — everything you write stays on your device.
